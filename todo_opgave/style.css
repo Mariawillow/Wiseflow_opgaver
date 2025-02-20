@@ -1,0 +1,155 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Container for ToDo */
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: rgb(254, 242, 212);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+/* Overskrifter */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    flex-grow: 1;
+    margin: 0 10px;
+    max-width: 300px;
+
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+
+
+}
+
+/* ToDo input & knap */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.new_task_input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-style: none;
+
+}
+
+.new_task_button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.new_task_button:hover {
+    background-color: #45a049;
+}
+
+/* ToDo liste styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styling af hver opgave */
+li {
+    background: #e7a53b;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Checkboks styling */
+.mark_toggle_done {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #4CAF50;
+        border-style: none;
+
+}
+
+/* Input til antal */
+.stk {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e5ca51;
+    border-style: none;
+}
+
+/* Slet-knap */
+.delete_row {
+    background-color: #ff4d4d;
+    color: #fdeeab;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete_row:hover {
+    background-color: #e60000;
+}
+
+/* Forskellige baggrundsfarver til opgaver */
+.colorTodo {
+    background-color: #f5e394;
+}
+
+.colorDone {
+    background-color: #d4edda;
+}
+
+.buttom_h3{
+    display: flex;
+
+}
+.stk_delete{
+    position: absolute;
+  right: 1.5rem;
+}
+
+hr{
+
+    border: 10px solid green;
+}
