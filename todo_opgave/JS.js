@@ -1,4 +1,3 @@
-
 //Navngivning efter hvad det er. QSL betyder queryselector. Så jeg ved hvor den høre til.
 const toDoListQsl = document.querySelector(".to_do_list");
 const toDoListDoneQsl = document.querySelector(".to_do_done");
@@ -12,6 +11,9 @@ const toDoArr = [];
 // {id: self.crypto.randomUUID(), text:"Gåtur med lille mona", done: false, antal: "0"}, 
 // {id: self.crypto.randomUUID(), text:"Ret opgave", done: false, antal: "0"}, 
 // {id: self.crypto.randomUUID(), text:"Øv din skala", done: false, antal: "0"}
+
+// Eventlistener til knappen newTaskButton, funktionen addNewTask kaldes
+newTaskButton.addEventListener("click", addNewTask);
 
 function addNewTask(){
     //Henter og trimmer brugerens input. 
@@ -42,8 +44,6 @@ function addNewTask(){
     showToDo();
 };
 
-//Opdatere UI.
-showToDo();
 
 //Jeg laver en funktion som skal vise "alt" hvad der er at se og kan gøres på siden.
 function showToDo(){
@@ -129,9 +129,7 @@ function showToDo(){
  });
 };
 
+
+
 //Vi kalder på funktionen, så den vises i html.
     showToDo();
-
-
-
-
